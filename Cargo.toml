@@ -1,0 +1,39 @@
+[package]
+name = "oxislam"
+version = "0.1.0"
+edition = "2026"
+description = "A lightweight no_std Rust SLAM library for planetary surface navigation"
+license = "Apache-2.0"
+rust-version = "1.75"
+
+# ----- Dependencies -----
+
+[dependencies]
+# Matrix math — the backbone of all our linear algebra
+# `nalgebra` gives us Vector3, Matrix3, Matrix4, Rotation3, etc.
+nalgebra = { version = "0.33", default-features = false }
+
+# Fixed-size collections for embedded (no heap allocation)
+heapless = { version = "0.8", optional = true }
+
+# no_std math functions (sqrt, sin, cos, atan2)
+micromath = { version = "0.6", optional = true }
+
+# Embedded-friendly logging
+defmt = { version = "0.3", optional = true }
+
+[dev-dependencies]
+# Approximate float comparison in tests
+# Lets you write: assert_relative_eq!(a, b, epsilon = 1e-10)
+approx = "0.5"
+
+# ----- Feature Flags -----
+
+[features]
+default = ["std"]
+
+# Standard library build — for development on Linux/macOS/Windows
+std = ["nalgebra/std"]
+
+# Embedded build — no OS, no heap, bare-metal ARM
+embedded = ["heapless", "defmt", "micromath"]

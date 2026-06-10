@@ -268,25 +268,7 @@ Full end-to-end test in Gazebo with a NASA LOLA DEM (lunar Digital Elevation Mod
 
 ***
 
-## 8. Opportunities This Project Creates
-
-### Immediate
-- **DevelopSpace Grant** — up to $2,500 for open source space engineering projects, multiple rounds per year[16][17]
-- **ISRO Internship** — direct application pathway (no exam) at VSSC/SAC with this project as portfolio[18][19]
-
-### Medium Term
-- **GSoC 2027** — a working, published Rust robotics crate is a competitive GSoC proposal foundation[20][21]
-- **Private Space Companies** — Skyroot, Agnikul, Pixxel, GalaxEye all hire engineers based on skills, no exam required[22]
-- **International Robotics Roles** — ESA, Boston Dynamics, Waymo, drone startups actively seek embedded Rust + robotics engineers
-
-### Long Term
-- **Research Publication** — benchmark results on DLR Sand dataset are publishable at ICRA, IROS, or i-SAIRAS (International Symposium on Artificial Intelligence, Robotics and Automation in Space)
-- **NASA NPP Fellowship** — requires PhD first, but this project is direct evidence of research capability required for application[23]
-- **Conference Talks** — RustConf, ROSCon, FOSDEM all have open CFPs where this project is a compelling talk topic
-
-***
-
-## 9. Success Metrics at Completion
+## 8. Success Metrics at Completion
 
 | Metric | Target |
 |--------|--------|
